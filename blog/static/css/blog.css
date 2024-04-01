@@ -1,46 +1,115 @@
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E6E6FA;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Header */
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+  margin-top: 0;
+  padding: 40px 20px 40px 40px;
+  border-bottom: 1px solid #fff;
+  background-color: #D8BFD8;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+.page-header h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 400;
 }
 
+.top-menu {
+  margin: 10px;
+  font-size: 20;
+  float: right;
+}
+
+/* Content */
 .content {
-    margin-left: 40px;
+  padding: 30px;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+.content h1,
+.content h2,
+.content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .post {
-    margin-bottom: 70px;
+  margin-bottom: 50px;
+  padding: 20px;
+  align-items: center; /* Розміщуємо div по вертикалі по центру */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
+.col-md-8 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%); /* Зсуваємо div на половину його власної ширини і висоти назад */
 }
+
+.post h1 {
+  font-size: 20px;
+  text-align: center; 
+}
+
+.post p {
+  line-height: 1.5;
+}
+
+.date {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Forms */
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-form input,
+.post-form textarea {
+  padding: 10px 150px;
+  border: 1px solid #D8BFD8;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.post-form textarea {
+  resize: vertical;
+}
+
+.save {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
