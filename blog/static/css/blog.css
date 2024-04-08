@@ -113,3 +113,11 @@ h1 {
   cursor: pointer;
 }
 
+.comment {
+  margin: 20px 0px 20px 20px;
+}
+
+.designcomment {
+  color: #d8a4d8;
+  font-size: 14px;
+}
