@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-974c(v6m7+jl@hdrlr227wneyjy0$3yt5^+!n7nq@#d7!!$hn6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yuliyaganzy.pythonanywhere.com']
 
 
 # Application definition
@@ -123,5 +123,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = Path(BASE_DIR / 'media')
 
 LOGIN_REDIRECT_URL = '/'
